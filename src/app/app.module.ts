@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BioComponent } from './bio/bio.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
-    BioComponent
+    BioComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule
