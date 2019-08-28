@@ -17,10 +17,8 @@
     </ul>
   </div>
   <section class="current">
-    <!-- <p (click)="showCurrent()" >current <i class="ion-md-arrow-dropdown"></i> </p> -->
-    <p (click)="showCurrent()" >current <i
+    <p class="exp" (click)="showCurrent()" >current <i
       [className]="currentVisible? 'ion-md-arrow-dropup' : 'ion-md-arrow-dropdown'"></i> </p>
-    <!-- <p>current <i class="ion-md-arrow-dropup"></i> </p> -->
     <div *ngIf="currentVisible"  class="current-details">
       <p class="current-details">from: {{jobs.current.from}} </p>
       <p>{{jobs.current.title}}</p>

@@ -4,6 +4,8 @@
   font-size: 80%;
 }
 
+// ---- INTRO ----
+
 .intro {
   flex: 0 0 20%;
   // .intro-photo {
@@ -35,4 +37,9 @@
       }
     }
   }
+}
+
+// ---- EXPERIENCE ----
+.exp {
+  cursor: pointer;
 }
