@@ -3,8 +3,8 @@
     <div class="intro-photo">
       <img src="../../assets/img/fotodl.png" alt="foto">
     </div>
-    <h2 class="intro-name">Dominik Lipinski</h2>
-    <h3 class="intro-title">Fronted Developer at xxx</h3>
+    <h3 class="intro-name">Dominic Lee</h3>
+    <p class="intro-title">Fronted Developer at xxx</p>
     <ul>
       <li> <a href="https://www.linkedin.com/in/dominiklipinski/"
               target="_blank">
@@ -17,8 +17,29 @@
     </ul>
   </div>
   <section class="current">
-    <!-- <h2>Frontend Developer</h2> -->
-    <p>current</p>
+    <!-- <p (click)="showCurrent()" >current <i class="ion-md-arrow-dropdown"></i> </p> -->
+    <p (click)="showCurrent()" >current <i
+      [className]="currentVisible? 'ion-md-arrow-dropup' : 'ion-md-arrow-dropdown'"></i> </p>
+    <!-- <p>current <i class="ion-md-arrow-dropup"></i> </p> -->
+    <div *ngIf="currentVisible"  class="current-details">
+      <p class="current-details">from: {{jobs.current.from}} </p>
+      <p>{{jobs.current.title}}</p>
+      <p>Frontend:</p>
+      <ul *ngFor="let item of jobs.current.frontTech">
+        <li>{{item}}</li>
+      </ul>
+      <ul *ngFor="let item of jobs.current.frontTask">
+        <li>{{item}}</li>
+      </ul>
+      <p>Backend:</p>
+      <ul *ngFor="let item of jobs.current.backTech">
+        <li>{{item}}</li>
+      </ul>
+      <ul *ngFor="let item of jobs.current.backTask">
+        <li>{{item}}</li>
+      </ul>
+    </div>
+
 
   </section>
 
