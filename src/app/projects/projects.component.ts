@@ -17,6 +17,7 @@ export class ProjectsComponent implements OnInit {
        desc: 'customisation of WP theme in line with provided graphical project',
        live: 'https://help.reservis.pl/',
        tech: ['ion-logo-css3', 'ion-logo-wordpress'],
+      //  tech: ['fas fa-css3-alt', 'fas fa-wordpress', 'fa fa-php', 'fa fa-wordpress'],
        pic: '../../assets/img/wpreservis.png'
       },
       {name: 'Landing Page for Real Estate Developer',

@@ -2,6 +2,9 @@
 
     <div *ngFor="let item of selected" class="project">
       <p>{{item.name}}</p>
+      <div *ngFor="let item of selected[0].tech">
+          <i class={{item}}></i>
+      </div>
     </div>
 
 </section>
