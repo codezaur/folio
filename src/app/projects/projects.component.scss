@@ -1,6 +1,4 @@
 .projects {
-  background-color: grey;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,9 +6,33 @@
 
 .project {
   flex: 0 0 28%;
+  margin: .5%;
 }
 
-.tech {
+.project-img {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  margin-bottom: 1%;
+// align-items: center;
+  img {
+    max-height: 200px;
+    max-width: 100%;
+  }
+}
+
+.project-name {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  text-align: justify;
+  font-size: 90%;
+}
+
+.project-tech {
   display: flex;
   flex-direction: row;
   border-top: 1px solid black;
