@@ -18,9 +18,10 @@
   </div>
   <section class="current">
     <p class="exp" (click)="showCurrent()" >current <i
-      [className]="currentVisible? 'ion-md-arrow-dropup' : 'ion-md-arrow-dropdown'"></i> </p>
+      [className]="currentVisible? 'ion-md-arrow-dropup' : 'ion-md-arrow-dropdown'"></i>
+    </p>
     <div *ngIf="currentVisible"  class="current-details">
-      <p class="current-details">from: {{jobs.current.from}} </p>
+      <p>from: {{jobs.current.from}} </p>
       <p>{{jobs.current.title}}</p>
       <p>Frontend:</p>
       <ul *ngFor="let item of jobs.current.frontTech">
@@ -37,8 +38,33 @@
         <li>{{item}}</li>
       </ul>
     </div>
+  </section>
 
-
+  <section class="prev">
+    <p class="exp" (click)="showPrev()" >prev <i
+      [className]="prevVisible? 'ion-md-arrow-dropup' : 'ion-md-arrow-dropdown'"></i>
+    </p>
+    <div *ngIf="prevVisible" class="prev-details">
+      <div class="prev-details-item">
+        <p>from: {{jobs.prev.from}}</p>
+        <p>{{jobs.prev.title}}</p>
+        <ul *ngFor="let item of jobs.prev.tech">
+          <li>{{item}}</li>
+        </ul>
+        <ul *ngFor="let item of jobs.prev.task">
+          <li>{{item}}</li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="prevVisible" class="prev-details">
+        <div class="prev-details-item">
+          <p>from: {{jobs.prev01.from}}</p>
+          <p>{{jobs.prev01.title}}</p>
+          <ul *ngFor="let item of jobs.prev01.task">
+            <li>{{item}}</li>
+          </ul>
+        </div>
+    </div>
   </section>
 
 </section>
