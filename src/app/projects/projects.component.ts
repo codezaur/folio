@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
   projects = {
     cash: [
       {name: 'Help Center in Wordpress',
-       desc: 'customisation of WP theme in line with provided graphical project',
+       desc: 'Customisation of WP theme in line with provided graphical project.',
        live: 'https://help.reservis.pl/',
        tech: ['ion-logo-css3', 'ion-logo-wordpress'],
       //  tech: ['fas fa-css3-alt', 'fas fa-wordpress', 'fa fa-php', 'fa fa-wordpress'],

@@ -1,9 +1,13 @@
 <section class="projects">
 
-    <div *ngFor="let item of selected" class="project">
-      <p>{{item.name}}</p>
-      <div *ngFor="let item of selected[0].tech">
+    <div *ngFor="let project of selected" class="project">
+      <p>{{project.name}}</p>
+      <p>{{project.desc}}</p>
+      <div class="tech">
+        <div *ngFor="let item of project.tech"
+              class="tech-item">
           <i class={{item}}></i>
+      </div>
       </div>
     </div>
 

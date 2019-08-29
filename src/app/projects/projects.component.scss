@@ -1,1 +1,20 @@
-.fa { font-family: 'FontAwesome' !important; }
+.projects {
+  background-color: grey;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex: 0 0 28%;
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+  .tech-item {
+    margin: 1px 4%;
+  }
+}
