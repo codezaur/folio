@@ -9,14 +9,8 @@
 
 .intro {
   flex: 0 0 20%;
-  // .intro-photo {
-  //   padding: 15%;
-  // }
   img {
-    // height: 100px;
-    // height: 5%;
     height: 100px;
-    // width: 90%;
     margin: 15% auto 2%;
     border-radius: 50%;
     -webkit-filter: grayscale(100%);
@@ -25,7 +19,6 @@
 
   ul {
     list-style: none;
-    // margin-left: 1%;
     li {
       display: inline-block;
       cursor: pointer;
