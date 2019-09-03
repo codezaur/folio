@@ -25,11 +25,18 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
+  height: 10%;
+  margin-bottom: 0;
+}
+
+.project-caption {
+font-size: .9rem;
 }
 
 .project-desc {
   text-align: justify;
   font-size: 90%;
+  height: 25%;
 }
 
 .project-tech {

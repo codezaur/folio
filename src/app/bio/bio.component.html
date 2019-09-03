@@ -1,7 +1,8 @@
 <section class="bio">
   <div class="intro">
     <div class="intro-photo">
-      <img src="../../assets/img/fotodl.png" alt="foto">
+      <!-- <img src="../../assets/img/fotodl.png" alt="foto"> -->
+      <img src="../../assets/img/pepekoks.jpg" alt="foto">
     </div>
     <h3 class="intro-name">Dominic Lee</h3>
     <p class="intro-title">Fronted Developer at xxx</p>
@@ -24,7 +25,8 @@
   </div>
   <section class="projects">
     show projects made for: <br>
-    <a href="#">money</a> <a href="">fun</a>
+    <a (click)="switchMoney('money')" href="#">money</a>
+    <a (click)="switchMoney('fun')" href="#">fun</a>
   </section>
   <section class="current">
     <p class="exp" (click)="showCurrent()" >current <i
