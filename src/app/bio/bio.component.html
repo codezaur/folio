@@ -107,4 +107,18 @@
       </li>
     </ul>
   </section>
+  <section class="projectsmo">
+      show things made for:
+    <a (click)="switch()"
+        href="#"
+        [ngClass]="showMe==='money'? 'highlight' : 'normal'"
+        >money</a>
+    <span class="projectsmo-ico">
+      <i [ngClass]="showMe==='money'? 'fa fa-chevron-right' : 'fa fa-chevron-left'"></i>
+    </span>
+    <a (click)="switch()"
+    href="#"
+    [ngClass]="showMe==='fun'? 'highlight' : 'normal'"
+    >fun</a>
+  </section>
 </section>
