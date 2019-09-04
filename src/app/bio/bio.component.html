@@ -25,8 +25,17 @@
   </div>
   <section class="projects">
     show projects made for: <br>
-    <a (click)="switch()" href="#">money</a>
-    <a (click)="switch()" href="#">fun</a>
+    <a (click)="switch()"
+    href="#"
+    [ngClass]="showMe==='money'? 'highlight' : 'normal'"
+    >money</a>
+    <span (click)="switch()" class="projects-ico">
+        <i [ngClass]="showMe==='money'? 'fa fa-chevron-right' : 'fa fa-chevron-left'"></i>
+    </span>
+    <a (click)="switch()"
+    href="#"
+    [ngClass]="showMe==='fun'? 'highlight' : 'normal'"
+    >fun</a>
   </section>
   <section class="current">
     <p class="exp" (click)="showCurrent()" >current <i

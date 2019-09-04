@@ -6,13 +6,16 @@
   font-size: 80%;
   padding-left: 2.5%;
   @include iph5 {
-    //display: none;
+    display: none;
   }
+
 }
 
 .biomo {
     display: flex;
     flex-direction: column;
+    padding-top: 4%;
+    margin-bottom: 6%;
     @include sm {
       display: none;
     }
@@ -94,6 +97,9 @@
     text-decoration: none;
     color: darkblue;
     margin: 0 5%;
+  }
+  .projects-ico {
+    cursor: pointer;
   }
 }
 

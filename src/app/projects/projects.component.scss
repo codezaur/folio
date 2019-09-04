@@ -1,4 +1,5 @@
 @import '../styling/breakpoints.scss';
+@import '../styling/variables.scss';
 
 .projects {
   display: flex;
@@ -12,6 +13,7 @@
 .project {
   flex: 0 0 27%;
   margin: .5%;
+  padding: 2%;
 }
 
 .project-img {
@@ -20,22 +22,36 @@
   padding: 1%;
   margin-bottom: 1%;
 // align-items: center;
+  @include iph5 {
+    margin-bottom: 4%;
+  }
   img {
     max-height: 200px;
     max-width: 100%;
+    @include iph5 {
+      max-height: 110px;
+    }
   }
 }
 
 .project-name {
+  color: $base;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 900;
+  text-transform: uppercase;
   height: 10%;
   margin-bottom: 0;
+  @include iph5 {
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+  }
 }
 
 .project-caption {
-font-size: .9rem;
+  color: $base;
+  font-size: .9rem;
+  text-align: center;
 }
 
 .project-desc {
@@ -48,6 +64,10 @@ font-size: .9rem;
   display: flex;
   flex-direction: row;
   border-top: 1px solid black;
+  @include iph5 {
+    border: none;
+    border-bottom: 1px solid black;
+  }
   .tech-item {
     margin: 1px 4%;
   }
