@@ -12,7 +12,6 @@ export class SwitchService {
   }
 
   updValue(val: string) {
-    console.log(`val in service: ${val}`);
     this.value.next(val);
   }
 }

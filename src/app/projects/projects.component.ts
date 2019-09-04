@@ -12,14 +12,6 @@ export class ProjectsComponent implements OnInit {
   value: string = 'okok';
   subscription: any;
 
-  constructor(private switchService: SwitchService) {
-    this.subscription = this.switchService.getValue()
-    .subscribe(val => {
-      this.value = val;
-      console.log(`val in project: ${val}`);
-    });
-   }
-
   projects = {
     cash: [
       {name: 'Zakupowy Sknera',
@@ -122,8 +114,14 @@ export class ProjectsComponent implements OnInit {
     ]
   };
 
-  // selected = this.projects.fun;
   selected = this.projects.cash;
+
+  constructor(private switchService: SwitchService) {
+    this.subscription = this.switchService.getValue()
+    .subscribe(val => {
+      val === 'fun' ? this.selected = this.projects.fun : this.selected = this.projects.cash;
+    });
+   }
 
   ngOnInit() {}
   OnDestroy() {
