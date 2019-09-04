@@ -1,7 +1,12 @@
+@import '../styling/breakpoints.scss';
+
 .projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  @include iph5 {
+    flex-direction: column;
+  }
 }
 
 .project {

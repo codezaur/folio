@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
       pic: '../../assets/img/wilanowka.png'
     },
       {name: 'Help Center Website',
-      capt: 'wordpress CMS',
+      capt: 'wordpress CMS theme',
       desc: 'Customisation of WP theme in line with provided graphical project.',
       live: 'https://help.reservis.pl/',
       tech: ['ion-logo-css3', 'ion-logo-wordpress'],

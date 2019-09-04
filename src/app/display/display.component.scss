@@ -1,7 +1,12 @@
+@import '../styling/breakpoints.scss';
+
 main {
   display: flex;
   font-family: 'Lato';
-  background-color: grey;
+  // background-color: grey;
+  @include iph5 {
+    flex-direction: column;
+  }
 }
 
 app-bio {

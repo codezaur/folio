@@ -1,8 +1,21 @@
+@import '../styling/breakpoints.scss';
+
 .bio {
   display: flex;
   flex-direction: column;
   font-size: 80%;
   padding-left: 2.5%;
+  @include iph5 {
+    //display: none;
+  }
+}
+
+.biomo {
+    display: flex;
+    flex-direction: column;
+    @include sm {
+      display: none;
+    }
 }
 
 // ---- INTRO ----
@@ -40,6 +53,39 @@
 
 .intro-title {
   text-align: center
+}
+
+.intromo {
+  display: flex;
+  flex-direction: row;
+  .intromo-photo {
+    margin: 0 1% 0 3%;
+    img {
+      height: 50px;
+      border-radius: 50%;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+    }
+  }
+  .intromo-data {
+    padding: 0 3%;
+    line-height: .9;
+  }
+  .intromo-name {
+    text-align: left;
+    font-size: 100%;
+  }
+  .intromo-title {
+    text-align: left;
+    font-size: 87%;
+  }
+  ul {
+    list-style: none;
+      a {
+        text-decoration: none;
+        color: grey;
+      }
+  }
 }
 
 // ---- PROJECTS ----
