@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import {SwitchProjectsService} from '../services/switchProjects.service';
+import {SwitchService} from '../services/switch.service';
 
 @Component({
   selector: 'app-bio',
   templateUrl: './bio.component.html',
-  styleUrls: ['./bio.component.scss'],
-  providers: [SwitchProjectsService]
+  styleUrls: ['./bio.component.scss']
 })
 export class BioComponent implements OnInit {
 
-  constructor(private switchProjectsService: SwitchProjectsService) { }
+  constructor(private switchService: SwitchService) { }
 
   currentVisible: boolean = false;
   prevVisible: boolean = false;
+  showMe = 'money';
 
   jobs = {
     current: {
@@ -42,10 +42,9 @@ export class BioComponent implements OnInit {
     }
   };
 
-  switchMoney(val: string) {
-    console.log('swithcing in bio.component now...');
-    console.log(val);
-    this.switchProjectsService.switching(val);
+  switch() {
+    this.showMe === 'money' ? this.showMe = 'fun' : this.showMe = 'money';
+    this.switchService.updValue(this.showMe);
   }
 
   showCurrent() {

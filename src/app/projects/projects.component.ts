@@ -1,18 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import {SwitchProjectsService} from '../services/switchProjects.service';
+import {SwitchService} from '../services/switch.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'],
-  providers: [SwitchProjectsService]
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
 
-  // constructor() { }
-  constructor(private switchProjectsService: SwitchProjectsService) { }
+  value: string = 'okok';
+  subscription: any;
 
-  // showMeTheMoney: boolean = true;
+  constructor(private switchService: SwitchService) {
+    this.subscription = this.switchService.getValue()
+    .subscribe(val => {
+      this.value = val;
+      console.log(`val in project: ${val}`);
+    });
+   }
 
   projects = {
     cash: [
@@ -119,14 +125,10 @@ export class ProjectsComponent implements OnInit {
   // selected = this.projects.fun;
   selected = this.projects.cash;
 
-  switch() {
-    console.log('swithing in projects...');
-    // if ( ) {
-
-    // }
-  }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
+  OnDestroy() {
+    this.subscription.unsubscribe();
+ }
 
 }
+
