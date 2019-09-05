@@ -65,7 +65,7 @@
 .project-tech {
   display: flex;
   flex-direction: row;
-  border-top: 1px solid black;
+  // border-top: 1px solid black;
   // justify-content: flex-end;
   // justify-content: space-between;
   @include iph5 {
@@ -89,5 +89,10 @@
       }
     }
   }
+}
 
+.projects > *:last-child {
+  .project-tech {
+    border-bottom: none;
+  }
 }

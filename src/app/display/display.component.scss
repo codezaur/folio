@@ -17,7 +17,7 @@ main {
 
 app-bio {
   flex: 0 0 17%;
-  border-right: 1px solid black;
+  //border-right: 1px solid black;
   @include us {
     position: sticky;
     top: 0;
@@ -30,10 +30,9 @@ app-bio {
     position: sticky;
     top: 0;
   }
-  // @include md {
-  //   position: sticky;
-  //   top: 0;
-  // }
+  @include md {
+    flex: 0 0 25%;
+  }
 }
 
 // app-footer {
