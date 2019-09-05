@@ -1,8 +1,13 @@
+@import '../styling/breakpoints.scss';
+
 .footer {
   // background-color: grey;
   font-family: Lato;
-  font-size: 75%;
+  font-size: 60%;
   text-align: center;
+  // @include iph5 {
+  //   width: 80%;
+  // }
   // max-width: 100%;
   // margin: 0 !important;
   // p {

@@ -1,4 +1,5 @@
 @import '../styling/breakpoints.scss';
+@import '../styling/variables.scss';
 
 .bio {
   display: flex;
@@ -16,6 +17,9 @@
     flex-direction: column;
     padding-top: 4%;
     margin-bottom: 6%;
+    background-color: $dark;
+    color: white;
+    // width: fit-content;
     @include sm {
       display: none;
     }
@@ -77,6 +81,7 @@
   .intromo-name {
     text-align: left;
     font-size: 100%;
+    letter-spacing: .1em;
   }
   .intromo-title {
     text-align: left;
@@ -87,6 +92,7 @@
       a {
         text-decoration: none;
         color: grey;
+        color: $cream;
       }
   }
 }
@@ -109,6 +115,7 @@
   a {
     margin: 0 5px;
     text-decoration: none;
+    color: white;
   }
 }
 
