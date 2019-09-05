@@ -4,20 +4,36 @@
 main {
   display: flex;
   font-family: 'Lato';
-  // background-color: grey;
+  @include us {
+    flex-direction: column;
+  }
   @include iph5 {
     flex-direction: column;
+  }
+  @include md {
+    flex-direction: row;
   }
 }
 
 app-bio {
   flex: 0 0 17%;
   border-right: 1px solid black;
+  @include us {
+    position: sticky;
+    top: 0;
+  }
   @include iph5 {
     position: sticky;
     top: 0;
-    background-color: white;
   }
+  @include sm {
+    position: sticky;
+    top: 0;
+  }
+  // @include md {
+  //   position: sticky;
+  //   top: 0;
+  // }
 }
 
 // app-footer {

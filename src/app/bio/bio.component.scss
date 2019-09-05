@@ -6,9 +6,21 @@
   flex-direction: column;
   font-size: 80%;
   padding-left: 2.5%;
+  @include us {
+    display: none;
+  }
   @include iph5 {
     display: none;
   }
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: flex;
+  }
+  // @include lg {
+  //   display: flex;
+  // }
 
 }
 
@@ -19,8 +31,7 @@
     margin-bottom: 6%;
     background-color: $dark;
     color: white;
-    // width: fit-content;
-    @include sm {
+    @include md {
       display: none;
     }
 }
@@ -78,6 +89,9 @@
     flex: 0 0 60%;
     padding: 0 3%;
     line-height: .9;
+    @include sm {
+      flex: 0 0 70%;
+    }
   }
   .intromo-name {
     text-align: left;
