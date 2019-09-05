@@ -23,11 +23,11 @@ export class ProjectsComponent implements OnInit {
       tech: ['ion-logo-css3', 'ion-logo-javascript'],
       pic: '../../assets/img/zakupowy-sknera.png'
     },
-      {name: 'Real Estate Developer',
+      {name: 'Real Estate Subdivision',
       capt: 'landing page',
-      desc: 'Done in cooperation with other developer. PSD 2 HTML + pixel perfect. \
+      desc: 'PSD 2 HTML + pixel perfect (done in cooperation with other developer). \
       My parts were: attractions, example house, available houses sections, \
-      and backend for contact form.',
+      and PHP backend for contact form.',
       live: 'http://osiedlewilanowka.pl/',
       tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
       pic: '../../assets/img/wilanowka.png'
@@ -56,7 +56,7 @@ export class ProjectsComponent implements OnInit {
      },
      {name: 'Travel Agency Website',
      capt: 'landing page',
-     desc: 'Psd2html landing page with cool blur effect, simple validation \
+     desc: 'PSD 2 HTML landing page with cool blur effect, simple validation \
       (displaing tooltip when number is entered into \'name\' field), \
       and some basic animation',
      live: 'https://schrodingerscode.net/turistLandingPage/',
