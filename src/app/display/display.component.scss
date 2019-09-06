@@ -1,9 +1,9 @@
 @import '../styling/breakpoints.scss';
 @import '../styling/variables.scss';
 
-.display {
-  height: 100vh;
-}
+// .display {
+//   height: 100vh;
+// }
 main {
   display: flex;
   font-family: 'Lato';
@@ -21,7 +21,7 @@ main {
 
 app-bio {
   flex: 0 0 17%;
-  //border-right: 1px solid black;
+
   @include us {
     position: sticky;
     top: 0;
@@ -36,6 +36,8 @@ app-bio {
   }
   @include md {
     flex: 0 0 25%;
+    height: 100vh;
+    //height: 95vh;
   }
 }
 
@@ -44,6 +46,8 @@ app-footer {
   //   width: 80%;
   // }
   @include md {
-    height: 6%;
+    //position: absolute;
+    bottom: 0;
+    height: 5%;
   }
 }
