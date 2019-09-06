@@ -1,6 +1,9 @@
 @import '../styling/breakpoints.scss';
 @import '../styling/variables.scss';
 
+.display {
+  height: 100vh;
+}
 main {
   display: flex;
   font-family: 'Lato';
@@ -12,6 +15,7 @@ main {
   }
   @include md {
     flex-direction: row;
+    height: 95%;
   }
 }
 
@@ -35,8 +39,11 @@ app-bio {
   }
 }
 
-// app-footer {
-//   @include iph5 {
-//     width: 80%;
-//   }
-// }
+app-footer {
+  // @include iph5 {
+  //   width: 80%;
+  // }
+  @include md {
+    height: 6%;
+  }
+}

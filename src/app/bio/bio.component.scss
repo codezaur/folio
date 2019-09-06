@@ -9,6 +9,7 @@
   background-color: $dark;
   height: 100%;
   color: white;
+  font-weight: 300;
   @include us {
     display: none;
   }
@@ -118,15 +119,15 @@
 
 // ---- PROJECTS ----
 .projects {
-  font-weight: 300;
   margin-bottom: 2rem;
   a {
     text-decoration: none;
     color: white;
-    margin: 0 5%;
+    margin: 0 5% 0 0;
   }
   .projects-ico {
     cursor: pointer;
+    margin-right: 5%;
   }
 }
 
@@ -155,6 +156,7 @@
 // ---- EXPERIENCE ----
 .exp {
   cursor: pointer;
+  font-weight: 300;
   i {
     color: white;
     float: right;
