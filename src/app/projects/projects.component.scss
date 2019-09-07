@@ -102,5 +102,8 @@
 .projects > *:last-child {
   .project-tech {
     border-bottom: none;
+    @include md {
+      border-bottom: 1px solid black;
+    }
   }
 }
