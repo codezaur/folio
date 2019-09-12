@@ -14,6 +14,15 @@ export class ProjectsComponent implements OnInit {
 
   projects = {
     cash: [
+      {name: 'Estate Deals Scraper',
+      capt: 'script',
+      desc: 'Script for real estate investor. Scraping major estate portals for ads, \
+      filtering them for requested criteria and sendig text message with \
+      links to new deals when they appear.\
+      Detail are confidential, so neither demo nor code is available.',
+      tech: ['ion-logo-python'],
+      pic: '../../assets/img/fake-python.jpg'
+    },
       {name: 'Zakupowy Sknera',
       capt: 'set of browser extensions',
       desc: 'Side project making me pocket money. \
