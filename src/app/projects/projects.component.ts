@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
       desc: 'Script for real estate investor. Scraping major estate portals for ads, \
       filtering them for requested criteria and sending text message with \
       links to new deals when they appear.\
-      Detail are confidential, so neither demo nor code is available.',
+      Details are confidential, so neither demo nor code is available.',
       tech: ['ion-logo-python'],
       pic: '../../assets/img/fake-python.jpg'
     },

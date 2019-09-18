@@ -38,7 +38,7 @@
       max-height: 110px;
     }
     @include md {
-      max-height: 220px;
+      height: 76px;
     }
   }
 }
@@ -55,31 +55,37 @@
     font-size: 1.2rem;
     letter-spacing: .1em;
   }
+  @include md {
+    line-height: 1;
+    height: 52px;
+    margin-bottom: 10px;
+  }
 }
 
 .project-caption {
   color: $base;
   font-size: .9rem;
   text-align: center;
+  @include md {
+    line-height: 1;
+    height: 28px;
+  }
 }
 
 .project-desc {
   text-align: justify;
   font-size: 90%;
   height: 25%;
+  @include md {
+    line-height: 1.1;
+    height: 150px;
+  }
 }
 
 .project-tech {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid black;
-  // border-top: 1px solid black;
-  // justify-content: flex-end;
-  // justify-content: space-between;
-  // @include iph5 {
-  //   // border: none;
-  //   border-bottom: 1px solid black;
-  // }
   .project-tech-items{
     display: flex;
     flex: 0 0 85%;
