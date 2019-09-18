@@ -30,6 +30,7 @@
     padding-top: 4%;
     margin-bottom: 6%;
     background-color: $dark;
+    opacity: 1;
     color: white;
     @include md {
       display: none;

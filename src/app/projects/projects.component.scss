@@ -109,8 +109,10 @@
     img {
       height: 18px;
       width: auto;
+      @include md {
       -webkit-filter: invert(89%) sepia(6%) saturate(310%) hue-rotate(136deg) brightness(91%) contrast(89%);
       filter: invert(89%) sepia(6%) saturate(310%) hue-rotate(136deg) brightness(91%) contrast(89%);
+      }
     }
     img:hover {
       -webkit-filter: invert(32%) sepia(51%) saturate(1786%) hue-rotate(205deg) brightness(107%) contrast(85%);
@@ -130,8 +132,12 @@
         img {
           height: 18px;
           width: auto;
+          @include md {
           -webkit-filter: invert(32%) sepia(51%) saturate(1786%) hue-rotate(205deg) brightness(107%) contrast(85%);
           filter: invert(32%) sepia(51%) saturate(1786%) hue-rotate(205deg) brightness(107%) contrast(85%);
+          }
+          // -webkit-filter: invert(32%) sepia(51%) saturate(1786%) hue-rotate(205deg) brightness(107%) contrast(85%);
+          // filter: invert(32%) sepia(51%) saturate(1786%) hue-rotate(205deg) brightness(107%) contrast(85%);
         }
         img:hover {
           -webkit-filter: invert(22%) sepia(87%) saturate(2763%) hue-rotate(218deg) brightness(78%) contrast(97%);
@@ -140,10 +146,6 @@
           box-shadow: 0 0 15px 5px black;
         }
       }
-      // a:hover {
-      //   color: $base;
-      //   text-shadow: 0 0 10px blue;
-      // }
     }
   }
 }
