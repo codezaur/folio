@@ -45,7 +45,7 @@ export class ProjectsComponent implements OnInit {
       {name: 'Help Center Website',
       capt: 'wordpress CMS theme',
       desc: 'Help center with information for users of online reservation system.\
-      Customisation of WordPress (child) theme in line with provided graphical project \
+      Customisation of WordPress (child) theme in line with provided graphical project. \
       Toggleable menu and integration with printing plugin.',
       live: 'https://help.reservis.pl/',
       tech: ['ion-logo-css3', 'ion-logo-wordpress'],

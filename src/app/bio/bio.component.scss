@@ -68,6 +68,17 @@
         i {
           font-size: 120%;
         }
+        img {
+          height: 18px;
+          width: auto;
+          -webkit-filter: invert(89%) sepia(6%) saturate(310%) hue-rotate(136deg) brightness(91%) contrast(89%);
+          filter: invert(89%) sepia(6%) saturate(310%) hue-rotate(136deg) brightness(91%) contrast(89%);
+        }
+        img:hover {
+          -webkit-filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(11deg) brightness(94%) contrast(100%);
+          filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(11deg) brightness(94%) contrast(100%);
+          box-shadow: 0 0 15px 5px black;
+        }
       }
     }
   }
@@ -111,13 +122,27 @@
     text-align: left;
     font-size: 87%;
   }
+
   ul {
     list-style: none;
-      a {
-        text-decoration: none;
-        color: $cream;
+    a {
+      text-decoration: none;
+      color: $cream;
+        img {
+          height: 18px;
+          width: auto;
+          -webkit-filter: invert(89%) sepia(6%) saturate(310%) hue-rotate(136deg) brightness(91%) contrast(89%);
+          filter: invert(89%) sepia(6%) saturate(310%) hue-rotate(136deg) brightness(91%) contrast(89%);
+        }
       }
-  }
+    }
+  // ul {
+  //   list-style: none;
+  //     a {
+  //       text-decoration: none;
+  //       color: $cream;
+  //     }
+  // }
 }
 
 // ---- PROJECTS ----
