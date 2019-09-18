@@ -36,8 +36,9 @@ app-bio {
   }
   @include md {
     flex: 0 0 25%;
-    height: 100vh;
+    // height: 100vh;
     //height: 95vh;
+    // overflow: auto;
   }
 }
 

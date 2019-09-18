@@ -16,7 +16,7 @@ export class BioComponent implements OnInit {
 
   jobs = {
     current: {
-      title: 'Frontend (fullstack) Developer at xxx',
+      title: 'Frontend (fullstack) Dev at xxx',
       from: '01.2019',
       frontTech: ['Javascript/Typescript', 'Angular', 'Ionic',
                   'Karma + Jasmine'],

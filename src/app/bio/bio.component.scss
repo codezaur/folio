@@ -164,3 +164,44 @@
     font-size: 120%;
   }
 }
+
+.current-details {
+  ul {
+    @include md {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    }
+  }
+  p {
+    @include md {
+    margin-bottom: 5px;
+    }
+  }
+}
+
+.current-details-section {
+  @include md {
+  margin-bottom: 7px;
+  padding-left: 10px;
+  }
+}
+
+.prev-details {
+  ul {
+    @include md {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    }
+  }
+  p {
+    @include md {
+    margin-bottom: 5px;
+    }
+  }
+}
+
+.prev-details:not(:last-child){
+  @include md {
+    margin-bottom: 15px;
+    }
+}

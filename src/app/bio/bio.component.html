@@ -44,14 +44,14 @@
     <div *ngIf="currentVisible"  class="current-details">
       <p>from: {{jobs.current.from}} </p>
       <p>{{jobs.current.title}}</p>
-      <p>Frontend:</p>
+      <p class="current-details-section">Frontend:</p>
       <ul *ngFor="let item of jobs.current.frontTech">
         <li>{{item}}</li>
       </ul>
       <ul *ngFor="let item of jobs.current.frontTask">
         <li>{{item}}</li>
       </ul>
-      <p>Backend:</p>
+      <p class="current-details-section">Backend:</p>
       <ul *ngFor="let item of jobs.current.backTech">
         <li>{{item}}</li>
       </ul>
