@@ -11,12 +11,22 @@
   display: flex;
   flex-direction: row;
   height: 2rem;
+  @include md {
+    text-align: left;
+    }
   .left {
     flex: 0 0 25%;
-   // margin-top: 5rem;
+    @include md {
+      padding-left: 10px;
+    }
   }
   p {
     margin-top: .5rem;
     margin-bottom: 0;
+  }
+  .rigth {
+    @include md {
+      padding-left: 0;
+    }
   }
 }

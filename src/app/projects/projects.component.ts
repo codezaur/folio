@@ -26,8 +26,9 @@ export class ProjectsComponent implements OnInit {
       {name: 'Zakupowy Sknera',
       capt: 'set of browser extensions',
       desc: 'Side project making me pocket money. \
-      Extensions for Chrome and Firefox, allowing users \
-      to save money while shopping online. Made with JavaScript.',
+      Few extensions for Chrome and Firefox, allowing users \
+      to save money while shopping online (eg. when buying books). \
+      Made with JavaScript. Publicly available, so feel free to install and test.',
       live: 'http://zakupowysknera.pl/',
       tech: ['ion-logo-css3', 'ion-logo-javascript'],
       pic: '../../assets/img/zakupowy-sknera.png'
@@ -43,7 +44,9 @@ export class ProjectsComponent implements OnInit {
     },
       {name: 'Help Center Website',
       capt: 'wordpress CMS theme',
-      desc: 'Customisation of WP theme in line with provided graphical project.',
+      desc: 'Help center with information for users of online reservation system.\
+      Customisation of WordPress (child) theme in line with provided graphical project \
+      Toggleable menu and integration with printing plugin.',
       live: 'https://help.reservis.pl/',
       tech: ['ion-logo-css3', 'ion-logo-wordpress'],
       //  tech: ['fas fa-css3-alt', 'fas fa-wordpress', 'fa fa-php', 'fa fa-wordpress'],
@@ -67,7 +70,7 @@ export class ProjectsComponent implements OnInit {
      capt: 'landing page',
      desc: 'PSD 2 HTML landing page with cool blur effect, simple validation \
       (displaing tooltip when number is entered into \'name\' field), \
-      and some basic animation',
+      and some basic animation.',
      live: 'https://schrodingerscode.net/turistLandingPage/',
      tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
      pic: '../../assets/img/landing-tourist.png',
@@ -75,9 +78,9 @@ export class ProjectsComponent implements OnInit {
       },
       {name: 'Percentage Calculator',
       capt: 'simple JS app',
-      desc: 'Percantage calculator (in polish) allowing \
-      to make various percentage calculations, eg., \
-      calculate number having given it\'s percentage.',
+      desc: 'Percantage calculator (in polish) allowing to make basic \
+      percentage calculations, eg. calculate number having given it\'s percentage, \
+      or what percentage of number X is number Y.',
       live: 'https://schrodingerscode.net/KalkulatorProcentowy/',
       tech: ['ion-logo-css3', 'ion-logo-javascript'],
       pic: '../../assets/img/calc.png',
@@ -85,8 +88,10 @@ export class ProjectsComponent implements OnInit {
       },
       {name: 'Medical Product Website',
       capt: 'landing page',
-      desc: 'Landing page with simple animations and transition effects.',
-      live: 'https://schrodingerscode.net/display-users/',
+      desc: 'Landing page with action buttons, features list, products comparison, customer testimonials, \
+      FAQ, pricing table and contact form.\
+      Used simple animations and transition effects.',
+      live: 'https://schrodingerscode.net/LandingPage/',
       tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
       pic: '../../assets/img/landing-medic.png',
       code: 'https://github.com/codezaur/ProductLandingPage'
@@ -94,7 +99,8 @@ export class ProjectsComponent implements OnInit {
       {name: 'Displaying Users App',
       capt: 'single page application',
       desc: 'Displaing users data from fake API \
-      (jsonplaceholder). Done with react, axios and react-router.',
+      (jsonplaceholder). Done with react, axios and react-router.\
+      Serving all CRUD actions and logging server response to console',
       live: 'https://schrodingerscode.net/display-users/',
       tech: ['ion-logo-javascript'],
       pic: '../../assets/img/display-users.png',
@@ -103,8 +109,8 @@ export class ProjectsComponent implements OnInit {
       {name: 'Glycemic Index Checker',
       capt: 'simple JS app',
       desc: 'Checks and displays glycemic index value \
-      (how much glucose level increases \
-      after consumption) of a given food.',
+      (how much glucose level increases after consumption) of a given food. \
+      Data is stored in JSON object and retrieved via XMLHttpRequest.',
       live: 'https://schrodingerscode.net/GlycemicIndex/',
       tech: ['ion-logo-html5', 'ion-logo-javascript'],
       pic: '../../assets/img/glycemic-index.png',
@@ -112,9 +118,9 @@ export class ProjectsComponent implements OnInit {
       },
       {name: 'Random Speech Generator',
       capt: 'simple JS app',
-      desc: 'My first JavaScript app. Generates random speech \
+      desc: 'My first JavaScript application. Generates random speech \
       of polish politician of your choice.\
-      Text is generated mostly from mixture of his previous statements',
+      Text is generated mostly from mixture of his previous statements stored in JSON object.',
       live: 'https://schrodingerscode.net/GeneratorPrzemowien/',
       tech: ['ion-logo-html5', 'ion-logo-javascript'],
       pic: '../../assets/img/speech-generator.png',
