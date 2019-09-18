@@ -86,9 +86,15 @@
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid black;
+  @include md {
+    padding: 0 3px;
+  }
   .project-tech-items{
     display: flex;
     flex: 0 0 85%;
+    @include md {
+      flex: 0 0 70%;
+    }
   }
   .tech-item {
     margin: 1px 4%;
@@ -96,10 +102,17 @@
   .project-tech_links {
     display: flex;
     justify-content: flex-end;
+    @include md {
+      flex: 0 0 30%;
+    }
     span {
       margin-left: 7px;
       a {
         color: $sub;
+      }
+      a:hover {
+        color: $base;
+        text-shadow: 0 0 10px blue;
       }
     }
   }
