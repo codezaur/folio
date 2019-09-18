@@ -168,7 +168,7 @@
 .current-details {
   ul {
     @include md {
-    padding-left: 20px;
+    padding: 0 5px 0 20px;
     margin-bottom: 5px;
     }
   }
@@ -189,7 +189,7 @@
 .prev-details {
   ul {
     @include md {
-    padding-left: 20px;
+    padding: 0 5px 0 20px;
     margin-bottom: 5px;
     }
   }
