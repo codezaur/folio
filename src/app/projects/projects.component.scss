@@ -80,6 +80,10 @@
     line-height: 1.1;
     height: 150px;
   }
+  @include lg {
+    line-height: 1.2;
+    height: 135px;
+  }
 }
 
 .project-tech {

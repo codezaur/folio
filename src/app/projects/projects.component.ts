@@ -57,7 +57,7 @@ export class ProjectsComponent implements OnInit {
       desc: 'Order page for e-commerce phone shop, allowing to choose \
        various options, from which some update price. \
        Form is validated for proper email/empty fields and order object is \
-       logged to console on submit. Backend is mocked as JSON.',
+       logged to console on submit. Backend mocked as JSON.',
       live: 'https://schrodingerscode.net/PhoneShop/',
       tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
       pic: '../../assets/img/order-phone.png',
