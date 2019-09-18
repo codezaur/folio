@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
 })
 export class ProjectsComponent implements OnInit {
 
-  value: string = 'okok';
+  // value: string = 'okok';
   subscription: any;
 
   projects = {
@@ -20,7 +20,9 @@ export class ProjectsComponent implements OnInit {
       filtering them for requested criteria and sending text message with \
       links to new deals when they appear.\
       Details are confidential, so neither demo nor code is available.',
-      tech: ['ion-logo-python'],
+      // tech: ['ion-logo-python'],
+      // tech: ['../../assets/logos/link.png'],
+      tech: ['python.png', 'selenium.png'],
       pic: '../../assets/img/fake-python.jpg'
     },
       {name: 'Zakupowy Sknera',
@@ -30,7 +32,7 @@ export class ProjectsComponent implements OnInit {
       to save money while shopping online (eg. when buying books). \
       Made with JavaScript. Publicly available, so feel free to install and test.',
       live: 'http://zakupowysknera.pl/',
-      tech: ['ion-logo-css3', 'ion-logo-javascript'],
+      tech: ['css.png', 'js.png', 'chrome.png', 'firefox.png'],
       pic: '../../assets/img/zakupowy-sknera.png'
     },
       {name: 'Real Estate Subdivision',
@@ -39,7 +41,7 @@ export class ProjectsComponent implements OnInit {
       My parts were: attractions, example house, available houses sections, \
       and PHP backend for contact form.',
       live: 'http://osiedlewilanowka.pl/',
-      tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
+      tech: ['css.png', 'js.png', 'sass.png'],
       pic: '../../assets/img/wilanowka.png'
     },
       {name: 'Help Center Website',
@@ -48,8 +50,7 @@ export class ProjectsComponent implements OnInit {
       Customisation of WordPress (child) theme in line with provided graphical project. \
       Toggleable menu and integration with printing plugin.',
       live: 'https://help.reservis.pl/',
-      tech: ['ion-logo-css3', 'ion-logo-wordpress'],
-      //  tech: ['fas fa-css3-alt', 'fas fa-wordpress', 'fa fa-php', 'fa fa-wordpress'],
+      tech: ['css.png', 'js.png', 'php.png'],
       pic: '../../assets/img/wpreservis.png'
       }
     ],
@@ -62,7 +63,7 @@ export class ProjectsComponent implements OnInit {
        Form is validated for proper email/empty fields and order object is \
        logged to console on submit. Backend mocked as JSON.',
       live: 'https://schrodingerscode.net/PhoneShop/',
-      tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
+      tech: ['css.png', 'js.png', 'sass.png'],
       pic: '../../assets/img/order-phone.png',
       code: 'https://github.com/codezaur/PhoneShopOrderPage'
      },
@@ -72,7 +73,7 @@ export class ProjectsComponent implements OnInit {
       (displaing tooltip when number is entered into \'name\' field), \
       and some basic animation.',
      live: 'https://schrodingerscode.net/turistLandingPage/',
-     tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
+     tech: ['css.png', 'js.png', 'sass.png'],
      pic: '../../assets/img/landing-tourist.png',
      code: 'https://github.com/codezaur/turistLandingPage'
       },
@@ -82,7 +83,7 @@ export class ProjectsComponent implements OnInit {
       percentage calculations, eg. calculate number having given it\'s percentage, \
       or what percentage of number X is number Y.',
       live: 'https://schrodingerscode.net/KalkulatorProcentowy/',
-      tech: ['ion-logo-css3', 'ion-logo-javascript'],
+      tech: ['css.png', 'js.png'],
       pic: '../../assets/img/calc.png',
       code: 'https://github.com/codezaur/PercentageCalculator'
       },
@@ -92,7 +93,7 @@ export class ProjectsComponent implements OnInit {
       FAQ, pricing table and contact form.\
       Used simple animations and transition effects.',
       live: 'https://schrodingerscode.net/LandingPage/',
-      tech: ['ion-logo-css3', 'ion-logo-javascript', 'ion-logo-sass'],
+      tech: ['css.png', 'js.png', 'sass.png'],
       pic: '../../assets/img/landing-medic.png',
       code: 'https://github.com/codezaur/ProductLandingPage'
       },
@@ -102,7 +103,7 @@ export class ProjectsComponent implements OnInit {
       (jsonplaceholder). Done with react, axios and react-router.\
       Serving all CRUD actions and logging server response to console',
       live: 'https://schrodingerscode.net/display-users/',
-      tech: ['ion-logo-javascript'],
+      tech: ['react.png'],
       pic: '../../assets/img/display-users.png',
       code: 'https://github.com/codezaur/ReactDisplayUsersSPA'
       },
@@ -112,7 +113,7 @@ export class ProjectsComponent implements OnInit {
       (how much glucose level increases after consumption) of a given food. \
       Data is stored in JSON object and retrieved via XMLHttpRequest.',
       live: 'https://schrodingerscode.net/GlycemicIndex/',
-      tech: ['ion-logo-html5', 'ion-logo-javascript'],
+      tech: ['html.png', 'js.png'],
       pic: '../../assets/img/glycemic-index.png',
       code: 'https://github.com/codezaur/GlycemicIndex'
       },
@@ -122,7 +123,7 @@ export class ProjectsComponent implements OnInit {
       of polish politician of your choice.\
       Text is generated mostly from mixture of his previous statements stored in JSON object.',
       live: 'https://schrodingerscode.net/GeneratorPrzemowien/',
-      tech: ['ion-logo-html5', 'ion-logo-javascript'],
+      tech: ['html.png', 'js.png'],
       pic: '../../assets/img/speech-generator.png',
       code: 'https://github.com/codezaur/GeneratorPrzemowien'
       }
