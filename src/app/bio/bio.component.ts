@@ -12,6 +12,7 @@ export class BioComponent implements OnInit {
 
   currentVisible: boolean = false;
   prevVisible: boolean = false;
+  stackVisible: boolean = false;
   showMe = 'money';
 
   jobs = {
@@ -42,6 +43,10 @@ export class BioComponent implements OnInit {
     }
   };
 
+  stack = ['Javascript', 'TypeScript', 'rest API', 'CSS', 'SCSS', 'BEM',
+          'HTML', 'Angular', 'React', 'Python', 'Selenium WebDriver',
+          'Docker', 'WordPress', 'PHP'];
+
   switch() {
     this.showMe === 'money' ? this.showMe = 'fun' : this.showMe = 'money';
     this.switchService.updValue(this.showMe);
@@ -53,6 +58,10 @@ export class BioComponent implements OnInit {
 
   showPrev() {
     this.prevVisible ? this.prevVisible = false : this.prevVisible = true;
+  }
+
+  showStack() {
+    this.stackVisible ? this.stackVisible = false : this.stackVisible = true;
   }
 
   ngOnInit() {

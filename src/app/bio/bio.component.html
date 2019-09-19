@@ -85,6 +85,17 @@
         </div>
     </div>
   </section>
+  <section class="stack">
+    <p class="exp" (click)="showStack()" >stack <i
+      [className]="stackVisible? 'ion-md-arrow-dropup' : 'ion-md-arrow-dropdown'"></i>
+    </p>
+    <div *ngIf="stackVisible" class="stack-details">
+      <p class="stack-intro">I've done something with following technologies or concepts:</p>
+      <ul *ngFor="let item of stack">
+        <li>{{item}}</li>
+      </ul>
+    </div>
+  </section>
 </section>
 
 <section class="biomo">

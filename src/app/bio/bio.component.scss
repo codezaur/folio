@@ -227,3 +227,17 @@
     margin-bottom: 15px;
     }
 }
+
+.stack-details {
+  ul {
+    @include md {
+    padding: 0 5px 0 20px;
+    margin-bottom: 5px;
+    }
+  }
+  p {
+    @include md {
+    margin-bottom: 5px;
+    }
+  }
+}
