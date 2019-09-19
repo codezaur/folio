@@ -40,6 +40,9 @@
     @include md {
       height: 76px;
     }
+    // @include xl {
+
+    // }
   }
 }
 
@@ -58,7 +61,13 @@
   @include md {
     line-height: 1;
     height: 52px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @include lg {
+    height: 38px;
   }
 }
 
@@ -69,6 +78,11 @@
   @include md {
     line-height: 1;
     height: 28px;
+    margin-bottom: 5px;
+  }
+  @include lg {
+    height: auto;
+    margin-bottom: 7px;
   }
 }
 
