@@ -39,10 +39,9 @@
     }
     @include md {
       height: 76px;
+      width: 100%;
+      object-fit: cover;
     }
-    // @include xl {
-
-    // }
   }
 }
 
