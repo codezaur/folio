@@ -40,35 +40,46 @@
 // ---- INTRO ----
 
 .intro {
-  // flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
   .intro-photo {
-    padding: 0 20%;
     margin-bottom: 1rem;
-  }
-  @include lg {
-    padding: 0 22%;
+    display: flex;
   }
   img {
     height: 100px;
     margin: 15% auto 2%;
     border-radius: 50%;
-    // -webkit-filter: grayscale(100%);
-    //         filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+  }
+  .intro-name {
+    text-align: center;
+    font-size: 1.5rem;
   }
 
+  .intro-title {
+    text-align: center;
+    font-weight: 200;
+  }
+
+  .intro-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
     li {
-      display: inline-block;
       cursor: pointer;
-      margin: 0 7%;
+      margin: 0 15% 0 15%;
       a {
         text-decoration: none;
-        color: $cream;
-        i {
-          font-size: 120%;
-        }
         img {
           height: 18px;
           width: auto;
@@ -83,15 +94,6 @@
       }
     }
   }
-}
-
-.intro-name {
-  text-align: center;
-}
-
-.intro-title {
-  text-align: center;
-  font-weight: 200;
 }
 
 .intromo {

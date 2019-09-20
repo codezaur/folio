@@ -44,7 +44,7 @@ export class BioComponent implements OnInit {
   };
 
   stack = ['Javascript', 'TypeScript', 'rest API', 'CSS', 'SCSS', 'BEM',
-          'HTML', 'Angular', 'React', 'Python', 'Selenium WebDriver',
+          'mobile-first', 'HTML', 'Angular', 'React', 'Python', 'Selenium WebDriver',
           'Docker', 'WordPress', 'PHP'];
 
   switch() {
