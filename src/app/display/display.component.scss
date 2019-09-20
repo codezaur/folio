@@ -2,7 +2,8 @@
 @import '../styling/variables.scss';
 
 // .display {
-//   height: 100vh;
+//   padding-bottom: 0;
+//   margin-bottom: 0;
 // }
 main {
   display: flex;
@@ -36,16 +37,10 @@ app-bio {
   }
   @include md {
     flex: 0 0 25%;
-    // height: 100vh;
-    //height: 95vh;
-    // overflow: auto;
   }
 }
 
 app-footer {
-  // @include iph5 {
-  //   width: 80%;
-  // }
   @include md {
     //position: absolute;
     bottom: 0;

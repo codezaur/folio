@@ -9,8 +9,8 @@ import { Subscription } from 'rxjs';
 })
 export class ProjectsComponent implements OnInit {
 
-  // value: string = 'okok';
   subscription: any;
+  loading: boolean = true;
 
   projects = {
     cash: [
@@ -138,9 +138,12 @@ export class ProjectsComponent implements OnInit {
    }
 
   ngOnInit() {}
+  onLoad() {
+    this.loading = false;
+  }
   OnDestroy() {
     this.subscription.unsubscribe();
- }
+  }
 
 }
 

@@ -1,7 +1,10 @@
 <section class="projects">
     <div *ngFor="let project of selected" class="project">
       <div class="project-img">
-        <img src="{{project.pic}}" alt="">
+        <!-- <img *ngIf="loading" src="../../assets/icons/loading.gif" alt="loading"> -->
+        <!-- <div *ngIf="loading">Loading...</div> -->
+        <div [hidden]="!loading">Loading...</div>
+        <img [hidden]="loading" (load)="onLoad()" src="{{project.pic}}" alt="project screen">
       </div>
       <p class="project-name">{{project.name}}</p>
       <p class="project-caption">{{project.capt}}</p>
