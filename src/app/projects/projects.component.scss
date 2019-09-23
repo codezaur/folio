@@ -2,30 +2,52 @@
 @import '../styling/variables.scss';
 
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   @include us {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   @include iph5 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   @include md {
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .project {
-  flex: 0 0 32%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
   margin: .5%;
   padding: 2%;
 }
 
 .project-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1%;
   margin-bottom: 1%;
   @include iph5 {
@@ -40,7 +62,8 @@
     @include md {
       height: 76px;
       width: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
     }
     @include xl {
       height: 96px;
@@ -64,9 +87,15 @@
     line-height: 1;
     height: 52px;
     margin-bottom: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   @include lg {
     height: 38px;
@@ -107,17 +136,28 @@
 }
 
 .project-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-bottom: 1px solid black;
   @include md {
     padding: 0 3px;
   }
   .project-tech-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex: 0 0 85%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
     @include md {
-      flex: 0 0 70%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 70%;
+              flex: 0 0 70%;
     }
   }
   .tech-item {
@@ -136,10 +176,16 @@
     }
   }
   .project-tech_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     @include md {
-      flex: 0 0 30%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 30%;
+              flex: 0 0 30%;
     }
     span {
       margin-left: 7px;
@@ -159,7 +205,8 @@
           -webkit-filter: invert(22%) sepia(87%) saturate(2763%) hue-rotate(218deg) brightness(78%) contrast(97%);
           filter: invert(22%) sepia(87%) saturate(2763%) hue-rotate(218deg) brightness(78%) contrast(97%);
           border-radius: 50%;
-          box-shadow: 0 0 15px 5px black;
+          -webkit-box-shadow: 0 0 15px 5px black;
+                  box-shadow: 0 0 15px 5px black;
         }
       }
     }

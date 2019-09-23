@@ -2,8 +2,13 @@
 @import '../styling/variables.scss';
 
 .bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 80%;
   padding-left: 2.5%;
   background-color: $dark;
@@ -20,13 +25,20 @@
     display: none;
   }
   @include md {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
 
 .biomo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 4%;
     margin-bottom: 6%;
     background-color: $dark;
@@ -40,11 +52,18 @@
 // ---- INTRO ----
 
 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 1rem;
   .intro-photo {
     margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   img {
@@ -66,14 +85,25 @@
   }
 
   .intro-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     li {
       cursor: pointer;
@@ -89,7 +119,8 @@
         img:hover {
           -webkit-filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(11deg) brightness(94%) contrast(100%);
           filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(11deg) brightness(94%) contrast(100%);
-          box-shadow: 0 0 15px 5px black;
+          -webkit-box-shadow: 0 0 15px 5px black;
+                  box-shadow: 0 0 15px 5px black;
         }
       }
     }
@@ -97,8 +128,13 @@
 }
 
 .intromo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   .intromo-photo {
     margin: 0 1% 0 3%;
     img {
@@ -109,11 +145,15 @@
     }
   }
   .intromo-data {
-    flex: 0 0 60%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
     padding: 0 3%;
     line-height: .9;
     @include sm {
-      flex: 0 0 70%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 70%;
+              flex: 0 0 70%;
     }
   }
   .intromo-name {
