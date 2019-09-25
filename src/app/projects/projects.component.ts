@@ -48,7 +48,7 @@ export class ProjectsComponent implements OnInit {
       Customisation of WordPress (child) theme in line with provided graphical project. \
       Toggleable menu and integration with printing plugin.',
       live: 'https://help.reservis.pl/',
-      tech: ['css', 'js', 'php'],
+      tech: ['css', 'js', 'php', 'jquery'],
       pic: '../../assets/img/wpreservis.png'
       }
     ],
