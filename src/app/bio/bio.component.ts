@@ -26,7 +26,7 @@ export class BioComponent implements OnInit {
         'communication with rest API',
         'full-fledged participating in planning app architecture and data flow'],
       backTech: ['Python'],
-      backTask: ['web-scrapping']
+      // backTask: ['web-scrapping']
     },
     prev: {
       title: 'Tester at Selidor',
