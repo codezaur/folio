@@ -2,9 +2,16 @@
 @import '../styling/variables.scss';
 
 // .display {
-//   padding-bottom: 0;
-//   margin-bottom: 0;
+//   // padding-bottom: 0;
+//   // margin-bottom: 0;
+//   @include iph5 {
+//     min-height: 100vh;
+//   }
+//   @include md {
+//     min-height: auto;
+//   }
 // }
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +34,8 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 95%;
+    // height: 95%;
+    min-height: 100vh;
   }
 }
 
