@@ -54,6 +54,16 @@ export class ProjectsComponent implements OnInit {
     ],
 
     fun: [
+      {name: 'Star Wars Battles',
+      capt: 'Angular SPA',
+      desc: 'Simple game with use of Star Wars API (https://swapi.co/) and Angular.\
+      Will get two random heros or species from API, \
+      and declare one of them winner basing on given criteria.',
+      tech: ['angular', 'typescript', 'js'],
+      pic: '../../assets/img/swbattle.png',
+      live: 'https://schrodingerscode.net/sw-battle/',
+      code: 'https://github.com/codezaur/StarWarsBattle'
+    },
       {name: 'Phone Shop',
       capt: 'order page',
       desc: 'Order page for e-commerce phone shop, allowing to choose \
